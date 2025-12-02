@@ -1,13 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website</title>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Sravan Akula's home page</title>
+    <meta name="author" content="Sravan Akula">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Titillium+Web&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>This is a simple website hosted on GitHub Pages.</p>
+<div class="main">
+<div class="content">
+<table>
+<tbody>
+<tr>
+    <td colspan="1" rowspan="3" width="10%"><img width="180" src="images/profile.jpg"></td>
+    <td width="50%" style="font-family:'Bungee Shade'"><h1>Sravan Akula</h1></td>
+</tr>
+<tr>
+    <td>Hi! I recently completed my Master’s at the University at Buffalo. My work focuses on 3D generative models and geometric perception, and I’m excited about building modular systems that understand and generate complex visual scenes. I’m currently seeking PhD opportunities to further this research.
+    </td>
+</tr>
+<tr>
+    <td>
+        <b>Email:</b> &nbsp; ajsk203@gmail.com<br>
+        <b>Links:</b> &nbsp; <a href="https://github.com/SravAku">Github</a> /
+        <a href="https://scholar.google.com/citations?user=3QWiH1EAAAAJ">Google scholar</a> 
+    </td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="content">
+<h2>Projects</h2>
+<table class="highlight">
+<tbody>
+<tr>
+    <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/MARL_traffic_control.png"></td>
+    <td><b>Traffic Flow Control using Multi Agent Reinforcement Learning </b><br>
+        <ul><li>Implemented a Collaborative Multi Agent RL model using PyTorch and PPO to optimize traffic flow over large simulated 
+sections of Atlanta and Manhattan. </li> 
+            <li>Achieved a significant reduction of over 40% in average waiting time of vehicles at each traffic signal.</li></ul>
+    </td>
+</tr>
+<!-- <tr>
+    <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="hovershow" style="width: 160px;height: 160px;"><video width=100% height=100% muted autoplay loop><source src="link" type="video/mp4"></video></div>
+        <div class="hoverhide" style="width: 160px;height: 160px;"><img src='link' width="160"></div>
+    </td>
+    <td><b>Project Name</b><br>
+        <ul><li>Project Desc</a>.
+        <div class="textbox-hide">
+            <a class="long" href="link">Project</a><br>
+            <p style="font-size: 80%;">
+                <a href=""> Author</a>
+            </p>
+            <p style="font-size: 80%;"><a href="">[project page]</a>
+        </div></li></ul>
+    </td>
+</tr> -->
+</tbody>
+</table>
+</div>
+
+
+<div class="content">
+<h2 style="line-height: 80%;">
+    <!-- Selected 
+    <span style="font-size: 80%;">(<a class="none" href="" id="show3" onclick="show(3);return false;">three</a>/<a class="none" href="" id="show5" onclick="show(5);return false;">five</a>)</span> -->
+    Publications
+    <!-- <p style="font-size: 40%;">(* indicates equal contribution)</p> -->
+</h2>
+
+<div class="highlight">
+<table id='pubs3'>
+<tbody>
+<tr>
+    <td style="padding:20px;width:20%;vertical-align:middle"><img style="width: 100%;" src="images/AAAI_CLIP_2026.gif"></td>
+    <td><strong>A Zero-shot 3D Framework for Human-centered Video Generation</strong>
+        <p style="font-size: 90%;"><strong>Jyothi Sravan Kumar Akula</strong>, Tianyu Luan, Qiwei Li, Luyuan Xie,Jiahuan Zhou, Junsong Yuan</p>
+        <div class="comment"><p>My first ever first author publication. Glad to see that an early work was good enough to get accepted in a good workshop. </p></div>
+    </td>
+</tr>
+<tr>
+    <td style="padding:20px;width:20%;vertical-align:middle"><img style="width: 100%;" src="images/HBCRO_BPSO.png"></td>
+    <td><strong>Binary chemical reaction optimization based feature selection techniques for machine learning classification problems</strong>
+        PC Srinivasa Rao,<p style="font-size: 90%;"><strong>AJ Sravan Kumar</strong>, Quamar Niyaz, Paheding Sidike, Vijay K Devabhaktuni</p>
+        <p style="font-size: 90%;">
+        <a href="https://doi.org/10.1016/j.eswa.2020.114169">[pdf]</a> 
+        <div class="comment"><p></p></div>
+    </td>
+</tr>
+<tr>
+    <td style="padding:20px;width:20%;vertical-align:middle"><img style="width: 100%;" src="images/iono_forecast.png"></td>
+    <td><strong>Implementation of hybrid deep learning model (LSTM-CNN) for ionospheric TEC forecasting using GPS data.</strong>
+        Adarsha Ruwali<p style="font-size: 90%;"><strong>AJ Sravan Kumar</strong>, Kolla Bhanu Prakash, G Sivavaraprasad, D Venkata Ratnam</p>
+
+        <p style="font-size: 90%;"><a href="https://doi.org/10.1109/LGRS.2020.2992633">[pdf]</a> 
+        <div class="comment"><p># My first work deep learning project! </p></div>
+
+    </td>
+</tr>
+</tbody>
+</table>
+
+<script>
+function show(num) {
+    if (num == 3){
+        document.getElementById("pubs3").style.display = "block";
+        document.getElementById("pubs5").style.display = "none";
+        document.getElementById('show3').style = 'color:#586e75';
+        document.getElementById('show5').style = 'color:#586e7538';
+    } else if (num == 5) {
+        document.getElementById("pubs5").style.display = "block";
+        document.getElementById("pubs3").style.display = "none";
+        document.getElementById('show5').style = 'color:#586e75';
+        document.getElementById('show3').style = 'color:#586e7538';
+    }
+}      
+show(3)
+</script>
+<script src="script.js"></script>
+
+</div>
 </body>
-</html>
