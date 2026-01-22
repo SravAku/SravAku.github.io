@@ -1,3 +1,11 @@
+/* Author: Liangchen Song 
+Author URL: https://lsongx.github.io/ 
+License: Creative Commons Attribution 3.0 Unported 
+License URL: http://creativecommons.org/licenses/by/3.0/ 
+Modified by: Jyothi Sravan Kumar Akula 
+Modified Author URL: https://sravaku.github.io/ */
+
+
 const hours = new Date().getHours()
 const isNightTime = hours < 6 || hours > 21
 
